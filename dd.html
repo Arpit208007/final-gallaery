@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="2.jpg" alt="Image 1" onclick="openModal();currentSlide(1)">
+        </div>
+        <div class="gallery-item">
+            <img src="6.jpg" alt="Image 2" onclick="openModal();currentSlide(2)">
+        </div>
+        <div class="gallery-item">
+            <img src="22.jpg" alt="Image 3" onclick="openModal();currentSlide(3)">
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.pinimg.com/originals/9d/fe/68/9dfe689f85ffa07b486780a77c16038a.jpg" alt="Image 3" onclick="openModal();currentSlide(3)">
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.pinimg.com/originals/84/ca/70/84ca7060f1958d639a988a8f2431fb41.jpg" alt="Image 3" onclick="openModal();currentSlide(3)">
+        </div>
+        <div class="gallery-item">
+            <img src="8.jpg" alt="Image 3" onclick="openModal();currentSlide(3)">
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.pinimg.com/originals/1c/77/0b/1c770b9bf71feefff3464e91c22c7b17.jpg" alt="Image 3" onclick="openModal();currentSlide(3)">
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.pinimg.com/originals/2f/bb/df/2fbbdf6db4c9c33c00777d8c39687a7a.jpg" alt="Image 3" onclick="openModal();currentSlide(3)">
+        </div>
+        <!-- Add more images as needed -->
+    </div>
+
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <img src="2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="6.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="22.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="https://i.pinimg.com/originals/9d/fe/68/9dfe689f85ffa07b486780a77c16038a.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="https://i.pinimg.com/originals/84/ca/70/84ca7060f1958d639a988a8f2431fb41.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="8.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="https://i.pinimg.com/originals/1c/77/0b/1c770b9bf71feefff3464e91c22c7b17.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="https://i.pinimg.com/originals/1c/77/0b/1c770b9bf71feefff3464e91c22c7b17.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="https://i.pinimg.com/originals/2f/bb/df/2fbbdf6db4c9c33c00777d8c39687a7a.jpg" style="width:100%">
+            </div>
+            
+           
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
